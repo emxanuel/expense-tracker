@@ -8,7 +8,6 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function HomeScreen() {
   const { data: expenses, isLoading: isLoadingExpenses, refetch: refetchExpenses, isRefetching: isRefetchingExpenses } = useGetExpenses()
-
   return (
     <SafeAreaView>
       <View className='flex flex-col'>
